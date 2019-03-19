@@ -1,0 +1,69 @@
+:local(.addFriendInput) {
+  border-radius: 0;
+  border-color: #ABAAAA;
+  border-left: 0;
+  border-right: 0;
+}
+
+:local(.genderField){
+  background-color: #fff;
+  padding:10px;  
+}
+:local(.formBlock){
+  padding: 0 2rem 2rem;
+}
+
+:local(.textCenter){
+  text-align: right;
+}
+:local(.textLeft){
+  text-align: left;
+}
+
+:local(.inlineButton){
+  display: inline-block;  
+}
+
+:local(.inlineButton:not(:first-child)){
+  margin-left: 10px;  
+}
+
+:local(.btn){
+  color:#fff;
+  background-color: #5C75B0;
+}
+
+:local(.btn:hover){
+  background-color: lightblue;
+}
+
+:local(.error){
+  color:red;
+  text-align: right;
+  background-color: #fff;
+}
+
+input[type="radio"] {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+}
+
+/* disabled style */
+input[type="radio"] + label {
+  padding: 0.2em 0.4em;
+  background: #ccc;
+}
+
+/* focused style */
+input[type="radio"]:focus + label {
+  outline: 2px solid #157BAC;
+}
+
+/* checked state */
+input[type="radio"]:checked + label {
+  background: #5C75B0;
+  font-weight: bold;
+  color: #fff;
+}
+
